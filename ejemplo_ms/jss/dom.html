@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Html</title>
+    <link rel="stylesheet" href="css/msg.css">
+</head>
+<body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <!--//los scripts se cargan al final del body para que no se bloquee la carga de la página</p> -->    
+    
+    <form name="saludarForm">
+        <div>
+            <label id="nombrelb">Nombre</label>
+            <input id="nmInput" type="text" name="nombre" onkeyup="nombreKeyUp()">
+            <p id="nombreerror" style="display: none;">Campo obligatorio</p>
+        </div>
+        <button id="saludarBtn" type="button">Saludar</button>
+        <button type="submit">Saludar Submit</button>
+    </form>
+    
+    <script src="js/dom.js"></script> 
+    
+</body>
+</html>
