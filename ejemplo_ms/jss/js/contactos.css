@@ -1,0 +1,33 @@
+.error{
+    color: red;
+    display: none;
+}
+.modal{
+    position: fixed;
+    top: 25vh;
+    left: 25vh;
+    width: 50vh;
+    height: 50 vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: top;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.modal form{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #34616156;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cerrar-modal{
+    top:-100vh;
+}

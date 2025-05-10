@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Validation</title>
+    <link rel="stylesheet" href="js/contactos.css">
+</head>
+
+<body>
+    <h1>
+        Lista de Contactos
+    </h1>
+    <button id="crearBtn">Agregar Contacto</button>
+    <div class="">
+        <table id="contactostable">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Numero</th>
+                </tr>
+            </thead>
+
+            <tbody id="contactos-lista">
+                <tr>
+                    <td colspan="3">No hay datos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal cerrar-modal">
+        <form name="formulario">
+            <div>
+                <label>Nombre</label>
+                <input type="text" name="Nombre" maxlength="50" onkeyup="nombreKeyUp()">
+                <p id="errorNombre" class="error" style="display:none;">Este Campo es Obligatorio.</p>
+                </p>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="Correo" required>
+            </div>
+            <div>
+                <label>Numero</label>
+                <input type="text" name="Numero" required>
+            </div>
+
+            <button type="submit">Guardar</button>
+
+        </form>
+    </div>
+    <script src="js/contactos.js"></script>
+
+</body>
+
+</html>
